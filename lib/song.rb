@@ -62,3 +62,15 @@ attr_accessor :name, :artist_name
 
   def song.find_or_create_by_name 
     @@all
+song_1 = Song.find_or_create_by_name("Blank Space")
+song_2 = Song.find_or_create_by_name("Blank Space")
+ 
+# song_1 and song_2 are conceptually the same song and should return the same song instance because of `.find_or_create_by_name.`
+ 
+song_1 == song_2 #=> true
+end 
+attr_accessor :name, :artist_name
+  @@all = []
+
+  def song.find_or_create_by_name 
+    @@all
