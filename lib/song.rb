@@ -80,4 +80,6 @@ attr_accessor :name, :artist_name
 
   def song.new_from_filename
     @@all    
-    
+    song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
+song.name #=> "Blank Space"
+song.artist_name #=> "Taylor Swift"
