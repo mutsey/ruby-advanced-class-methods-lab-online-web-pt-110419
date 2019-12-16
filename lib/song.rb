@@ -39,4 +39,15 @@ attr_accessor :name, :artist_name
 
   def song.create_by_name 
     @@all
-    
+    song = Song.create_by_name("The Middle")
+#=> #<Song:0x007fd2a2989ff0 @name="The Middle">
+song
+#=> #<Song:0x007fd2a2989ff0 @name="The Middle">
+Song.all.include?(song)
+#=> true
+end 
+attr_accessor :name, :artist_name
+  @@all = []
+
+  def song.create_by_name 
+    @@all
