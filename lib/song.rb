@@ -24,4 +24,9 @@ end
     @@all
     song = Song.create
 Song.all.include?(song) #=> true
+end 
+attr_accessor :name, :artist_name
+  @@all = []
 
+  def song.new_by_name 
+    @@all
