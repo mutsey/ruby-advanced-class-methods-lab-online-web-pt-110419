@@ -51,4 +51,14 @@ attr_accessor :name, :artist_name
 
   def song.find_by_name 
     @@all
-    
+    the_middle = Song.create_by_name("The Middle")
+#=> #<Song @name="The Middle">
+ 
+Song.find_by_name("The Middle")
+#<Song @name="The Middle">
+end 
+attr_accessor :name, :artist_name
+  @@all = []
+
+  def song.find_by_name 
+    @@all
