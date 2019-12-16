@@ -37,5 +37,6 @@ end
 attr_accessor :name, :artist_name
   @@all = []
 
-  def song.new_by_name 
+  def song.create_by_name 
     @@all
+    
