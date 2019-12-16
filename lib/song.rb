@@ -72,5 +72,6 @@ end
 attr_accessor :name, :artist_name
   @@all = []
 
-  def song.find_or_create_by_name 
+  def song.alphabetical 
     @@all
+    
