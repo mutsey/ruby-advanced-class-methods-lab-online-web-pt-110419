@@ -22,4 +22,5 @@ end
 
   def song.create 
     @@all
-    
+    song = Song.create
+Song.all.include?(song) #=> true
