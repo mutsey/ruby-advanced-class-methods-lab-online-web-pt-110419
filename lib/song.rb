@@ -83,3 +83,15 @@ attr_accessor :name, :artist_name
     song = Song.new_from_filename("Taylor Swift - Blank Space.mp3")
 song.name #=> "Blank Space"
 song.artist_name #=> "Taylor Swift"
+end 
+attr_accessor :name, :artist_name
+  @@all = []
+
+  def song.create_from_filename
+    @@all  
+    
+  attr_accessor :name, :artist_name
+  @@all = []
+
+  def song.destroy_all 
+    @@all  
