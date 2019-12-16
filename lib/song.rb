@@ -75,3 +75,9 @@ attr_accessor :name, :artist_name
   def song.alphabetical 
     @@all
     
+attr_accessor :name, :artist_name
+  @@all = []
+
+  def song.new_from_filename
+    @@all    
+    
