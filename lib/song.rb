@@ -30,3 +30,12 @@ attr_accessor :name, :artist_name
 
   def song.new_by_name 
     @@all
+song = Song.new_by_name("The Middle")
+#=> #<Song @name="The Middle">
+song.name #=> "The Middle"
+end 
+attr_accessor :name, :artist_name
+  @@all = []
+
+  def song.new_by_name 
+    @@all
